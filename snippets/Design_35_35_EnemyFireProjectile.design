@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="This prevents the enemy from shooting as soon as it comes on screen, since that&amp;apos;s annoying and would cause cheap deaths."/>
+                </comment-short>
+                <set-val-35-2 comment="false" x="26" y="60">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-35-2>
+                <dolater comment="false" x="26" y="85">
+                    <group eventID="-1" id="-1">
+                        <set-val-35-2 comment="false" x="37" y="117">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-35-2>
+                    </group>
+                    <get-val-35-1 comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-35-2 comment="false" x="37" y="70">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-35-2>
+                        <create-actor3 comment="false" x="37" y="95">
+                            <actortype eid="39" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="2147483647"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <int id="1" val="20"/>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="2147483647"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <int id="1" val="28"/>
+                            </minus>
+                            <int id="3" val="2"/>
+                        </create-actor3>
+                        <comment-short comment="false" x="37" y="140">
+                            <int id="0" val="This long math block determines the angle between the firing enemy and the player. The +20 and +12 are so that it shoots more toward the center of the player actor."/>
+                        </comment-short>
+                        <setvel comment="false" x="37" y="160">
+                            <ACTOR eid="var" id="0" vid="2147483647"/>
+                            <to-degreesradians comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <atan2 comment="false" id="1" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="20"/>
+                                        </plus>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="2147483647"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                    </minus>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="12"/>
+                                        </plus>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="2147483647"/>
+                                            <int id="1" val="0"/>
+                                        </get-xy>
+                                    </minus>
+                                </atan2>
+                            </to-degreesradians>
+                            <get-val-35-4 comment="false" id="2" x="0" y="0"/>
+                        </setvel>
+                        <dolater comment="false" x="37" y="223">
+                            <group eventID="-1" id="-1">
+                                <set-val-35-2 comment="false" x="48" y="255">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-35-2>
+                            </group>
+                            <get-val-35-1 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-35-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

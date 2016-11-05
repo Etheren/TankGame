@@ -8,11 +8,170 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="11" name="Back Button 1" sx="1.0" sy="1.0" x="60" y="480" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="3" id="11" name="Back Button 1" sx="0.62068963" sy="0.62068963" x="-33" y="561" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="0" id="30" name="Player 2" sx="1.0" sy="1.0" x="510" y="480" z="0"/>
+        <actor a="0.0" aid="3" c="true" group="4" id="32" name="Easy tank 3" sx="1.0" sy="1.0" x="60" y="90" z="0">
+            <snippets>
+                <s enabled="true" id="22">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val=""/>
+                </s>
+                <s enabled="true" id="38">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="3"/>
+                    <prop id="2" list="0" val="false"/>
+                    <prop id="3" list="0" val=""/>
+                    <prop id="4" list="0" val="45.0"/>
+                </s>
+                <s enabled="true" id="24">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="0.0"/>
+                    <prop id="5" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="5"/>
+                    <prop id="7" list="0" val="100"/>
+                    <prop id="8" list="0" val="false"/>
+                    <prop id="9" list="0" val="5"/>
+                    <prop id="10" list="0" val="0.0"/>
+                    <prop id="11" list="0" val="true"/>
+                    <prop id="12" list="0" val="false"/>
+                </s>
+                <s enabled="true" id="25">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="-90"/>
+                    <prop id="5" list="0" val="2"/>
+                </s>
+                <s enabled="true" id="27"/>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="4" c="true" group="4" id="36" name="Hard tank 4" sx="1.0" sy="1.0" x="172" y="68" z="0">
+            <snippets>
+                <s enabled="true" id="22">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="Explosion"/>
+                </s>
+                <s enabled="true" id="38">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="false"/>
+                    <prop id="3" list="0" val=""/>
+                    <prop id="4" list="0" val="45.0"/>
+                </s>
+                <s enabled="true" id="24">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="0.0"/>
+                    <prop id="5" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="15"/>
+                    <prop id="7" list="0" val="100"/>
+                    <prop id="8" list="0" val="false"/>
+                    <prop id="9" list="0" val="15"/>
+                    <prop id="10" list="0" val="0.0"/>
+                    <prop id="11" list="0" val="true"/>
+                    <prop id="12" list="0" val="false"/>
+                </s>
+                <s enabled="true" id="25">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="-90"/>
+                    <prop id="5" list="0" val="2"/>
+                </s>
+                <s enabled="true" id="28"/>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="5" c="true" group="4" id="34" name="Medium tank 5" sx="1.0" sy="1.0" x="390" y="60" z="0">
+            <snippets>
+                <s enabled="true" id="22">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="Explosion"/>
+                </s>
+                <s enabled="true" id="38">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="2.5"/>
+                    <prop id="2" list="0" val="false"/>
+                    <prop id="3" list="0" val=""/>
+                    <prop id="4" list="0" val="45.0"/>
+                </s>
+                <s enabled="true" id="24">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="0.0"/>
+                    <prop id="5" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="10"/>
+                    <prop id="7" list="0" val="1"/>
+                    <prop id="8" list="0" val="false"/>
+                    <prop id="9" list="0" val="10"/>
+                    <prop id="10" list="0" val="0.0"/>
+                    <prop id="11" list="0" val="true"/>
+                    <prop id="12" list="0" val="false"/>
+                </s>
+                <s enabled="true" id="25">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="-90"/>
+                    <prop id="5" list="0" val="2"/>
+                </s>
+                <s enabled="true" id="29"/>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="6" c="true" group="4" id="32" name="Easy tank 6" sx="1.0" sy="1.0" x="480" y="150" z="0">
+            <snippets>
+                <s enabled="true" id="22">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="Explosion"/>
+                </s>
+                <s enabled="true" id="38">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="3"/>
+                    <prop id="2" list="0" val="false"/>
+                    <prop id="3" list="0" val=""/>
+                    <prop id="4" list="0" val="45.0"/>
+                </s>
+                <s enabled="true" id="24">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="0.0"/>
+                    <prop id="5" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="5"/>
+                    <prop id="7" list="0" val="75"/>
+                    <prop id="8" list="0" val="false"/>
+                    <prop id="9" list="0" val="5"/>
+                    <prop id="10" list="0" val="0.0"/>
+                    <prop id="11" list="0" val="true"/>
+                    <prop id="12" list="0" val="false"/>
+                </s>
+                <s enabled="true" id="25">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="2" list="0" val="0.0"/>
+                    <prop id="3" list="0" val="0.0"/>
+                    <prop id="4" list="0" val="-90"/>
+                    <prop id="5" list="0" val="2"/>
+                </s>
+                <s enabled="true" id="27"/>
+            </snippets>
+        </actor>
     </actors>
     <snippets/>
     <terrain>
-        <p pts="4,0.0,600.0,0.0,0.0,600.0,0.0,600.0,600.0" x="0.0" y="0.0"/>
+        <p pts="24,510.0,450.0,420.0,450.0,420.0,420.0,510.0,420.0,510.0,270.0,420.0,270.0,420.0,240.0,510.0,240.0,510.0,120.0,480.0,120.0,480.0,90.0,450.0,90.0,450.0,60.0,420.0,60.0,420.0,30.0,90.0,30.0,90.0,90.0,60.0,90.0,60.0,30.0,0.0,30.0,0.0,0.0,540.0,0.0,540.0,600.0,510.0,600.0" x="60.0" y="0.0"/>
+        <p pts="6,90.0,30.0,90.0,0.0,120.0,0.0,120.0,60.0,0.0,60.0,0.0,30.0" x="150.0" y="120.0"/>
+        <p pts="6,0.0,60.0,0.0,0.0,30.0,0.0,30.0,30.0,120.0,30.0,120.0,60.0" x="330.0" y="120.0"/>
+        <p pts="4,0.0,0.0,30.0,0.0,30.0,180.0,0.0,180.0" x="390.0" y="270.0"/>
+        <p pts="4,0.0,120.0,0.0,0.0,60.0,0.0,60.0,120.0" x="270.0" y="180.0"/>
+        <p pts="14,120.0,180.0,0.0,180.0,0.0,150.0,90.0,150.0,90.0,0.0,120.0,0.0,120.0,150.0,150.0,150.0,150.0,180.0,180.0,180.0,180.0,240.0,150.0,240.0,150.0,210.0,120.0,210.0" x="90.0" y="270.0"/>
+        <p pts="10,540.0,570.0,540.0,600.0,0.0,600.0,0.0,0.0,30.0,0.0,30.0,180.0,90.0,180.0,90.0,210.0,30.0,210.0,30.0,570.0" x="0.0" y="0.0"/>
     </terrain>
     <atlases members="" retainAtlases="true"/>
 </scene>

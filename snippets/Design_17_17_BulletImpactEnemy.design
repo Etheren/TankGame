@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-grouptogroup comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-game-val-0 comment="false" x="26" y="47">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-0>
+                <die comment="false" x="26" y="72">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </die>
+            </group>
+            <actorgroup eid="5" id="0"/>
+            <actorgroup eid="4" id="1"/>
+        </event-collide-grouptogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

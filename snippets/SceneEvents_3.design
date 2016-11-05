@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-color comment="false" x="26" y="40">
+                    <color b="102" g="204" id="0" r="0"/>
+                </set-color>
+                <drawfill-roundrect comment="false" x="26" y="67">
+                    <int id="0" val="1"/>
+                    <int id="1" val="550"/>
+                    <int id="2" val="2"/>
+                    <get-game-val-4 comment="false" id="3" x="0" y="0"/>
+                    <int id="4" val="26"/>
+                    <int id="5" val="5"/>
+                </drawfill-roundrect>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

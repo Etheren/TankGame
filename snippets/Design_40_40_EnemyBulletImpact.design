@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-grouptogroup comment="false" x="16" y="14">
+            <group eventID="2" id="-1">
+                <die comment="false" x="27" y="46">
+                    <ACTOR eid="var" id="0" vid="2147483647"/>
+                </die>
+            </group>
+            <actorgroup eid="6" id="0"/>
+            <actorgroup eid="0" id="1"/>
+        </event-collide-grouptogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-collide-grouptogroup comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="var" id="0" vid="2147483647"/>
+                </die>
+            </group>
+            <actorgroup eid="6" id="0"/>
+            <actorgroup eid="1" id="1"/>
+        </event-collide-grouptogroup>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="315"/>
+                        </setangle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="0" id="1"/>
+                        </keystate>
+                        <keystate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="2" id="1"/>
+                        </keystate>
+                    </and>
+                </if>
+                <else-if comment="false" x="26" y="117">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="155">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="45"/>
+                        </setangle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="0" id="1"/>
+                        </keystate>
+                        <keystate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="5" id="1"/>
+                        </keystate>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="194">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="232">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="235"/>
+                        </setangle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="1" id="1"/>
+                        </keystate>
+                        <keystate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="2" id="1"/>
+                        </keystate>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="271">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="309">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="135"/>
+                        </setangle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <keystate comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="1" id="1"/>
+                        </keystate>
+                        <keystate comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <control eid="5" id="1"/>
+                        </keystate>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="348">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="381">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </setangle>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="0" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="26" y="420">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="453">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="180"/>
+                        </setangle>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="1" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="26" y="492">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="525">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="270"/>
+                        </setangle>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="2" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="26" y="564">
+                    <group eventID="2" id="-1">
+                        <setangle comment="false" x="37" y="597">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="90"/>
+                        </setangle>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="5" id="1"/>
+                    </keystate>
+                </else-if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

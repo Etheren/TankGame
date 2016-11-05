@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-collide-grouptogroup comment="false" x="16" y="14">
+            <group eventID="2" id="-1">
+                <die comment="false" x="27" y="46">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-0 comment="false" x="27" y="73">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-0>
+            </group>
+            <actorgroup eid="5" id="0"/>
+            <actorgroup eid="4" id="1"/>
+        </event-collide-grouptogroup>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-grouptogroup comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <die comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-0 comment="false" x="26" y="74">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-0>
+            </group>
+            <actorgroup eid="5" id="0"/>
+            <actorgroup eid="1" id="1"/>
+        </event-collide-grouptogroup>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

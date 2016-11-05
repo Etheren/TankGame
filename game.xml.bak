@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <game accelFramerate="0" adsPosition="0" aheight="600" androidAlias="" androidCert="" androidMinVersion="0" androidPassword="" androidPublicKey="" androidTargetVersion="7" antialias="true" appName="My Game" appType="0" atlasBindingDefault="false" author="" authorURL="" autoRotate="false" awidth="600" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" bindAllAtlasesDefault="false" borderColor="-12303292" borderThickness="2" bundleID="com.yourname.gamename" bundleVersion="1.0" checksum="none" cpmID="" cws-desc="Description" cws-icon128="" cws-icon16="" cws-name="Name" cws-version="1.0" default="0" defaultFramerate="60" defaultSceneID="0" desc="" desktopScale="1x" desktopScaleMode="1" deviceOS="4.3" disableBackButton="false" enableGPG="false" enablePurchases="false" format="3.4.0" gameid="-1" googleAppID="" haxeExtras="" height="600" internalVersion="1" internalVersionIOS="1" ioswhirlKey="" ioswhirlKey1="" kit="false" lockURL="" macBundleID="" maxScaleAndroid="4x" maxScaleDesktop="4x" maxScaleIOS="4x" maxScaleWeb="4x" metroColor="-12566464" multitouch="true" name="BattleTanks" ngID="" ngKey="" openflExtras="" openflLegacy="true" orientation="0" p12="" p12pwd="" physicsMode="0" pixelsnap="false" preloaderstyle="0" products="" prov-adhoc="" prov-store="" scale="1" scaleModeAndroid="0" scaleModeDesktop="0" scaleModeIOS="0" scaleModeWeb="0" showAds="false" simulatorOS="4.3" splashStyle="0" startInFullScreenDesktop="false" startInFullScreenWeb="false" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" telemetry="false" testAds="false" useGlossyIcon="false" webScale="1x" whirlKey="" whirlKey1="" width="600" windowsAppName="" windowsAuthor="" windowsBundleID="">
-    <exts/>
+    <exts>
+        <e enabled="false" id="test"/>
+        <e enabled="false" id="test-native"/>
+        <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
+    </exts>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
         <scale detailed="1.5x" id="1" name="1.5x" size="1.5"/>
@@ -62,27 +67,47 @@
             <r id="21"/>
         </group>
     </folders>
-    <packs/>
-    <groups/>
+    <packs>
+        <pack desc="" id="0" name="TankGameBehaviours" oid="-1" resources="" snippets="18,19,20,21,22"/>
+        <pack desc="" id="1" name="TanksAIPack" oid="-1" resources="32,34,36,30" snippets="23,24,25"/>
+    </packs>
+    <groups>
+        <group desc="" id="4" name="Enemies"/>
+        <group desc="" id="5" name="Projectiles"/>
+        <group desc="" id="6" name="Enemy Projectiles"/>
+    </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
+        <cgroup g1="0" g2="6"/>
         <cgroup g1="1" g2="3"/>
+        <cgroup g1="1" g2="4"/>
+        <cgroup g1="1" g2="5"/>
+        <cgroup g1="1" g2="6"/>
         <cgroup g1="3" g2="3"/>
+        <cgroup g1="4" g2="5"/>
     </cgroups>
     <input>
-        <key id="0" keyname="UP" name="up" vk="38" vks="38"/>
-        <key id="1" keyname="DOWN" name="down" vk="40" vks="40"/>
-        <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
-        <key id="3" keyname="RIGHT" name="right" vk="39" vks="39"/>
-        <key id="4" keyname="Z" name="action1" vk="90" vks="90"/>
-        <key id="5" keyname="X" name="action2" vk="88" vks="88"/>
-        <key id="6" keyname="ENTER" name="enter" vk="10" vks="10"/>
+        <key id="0" keyname="W" name="up" vk="87" vks="87"/>
+        <key id="1" keyname="S" name="down" vk="83" vks="83"/>
+        <key id="2" keyname="A" name="left" vk="65" vks="65"/>
+        <key id="4" keyname="SPACE" name="fire" vk="32" vks="32"/>
+        <key id="5" keyname="D" name="right" vk="68" vks="68"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
-    <attributes/>
+    <attributes>
+        <number cid="-1" id="1" name="BulletForce" save="true" value="30.0"/>
+        <number cid="-1" id="7" name="EnemyBulletDamage" save="true" value="10.0"/>
+        <number cid="-1" id="4" name="Health" save="true" value="50.0"/>
+        <number cid="-1" id="6" name="PlayerY" save="true" value="0.0"/>
+        <boolean cid="-1" id="0" name="BulletAlive" save="true" value="false"/>
+        <number cid="-1" id="8" name="KillCount" save="true" value="0"/>
+        <number cid="-1" id="2" name="BulletHeight" save="true" value="10.0"/>
+        <number cid="-1" id="5" name="PlayerX" save="true" value="0.0"/>
+        <text cid="-1" id="3" name="Direction" save="true" value=""/>
+    </attributes>
     <collisions>
         <poly id="0" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
         <poly id="1" name="Rect Up" pts="0.0,0.0#0.0,0.5#1.0,0.5#1.0,0.0"/>
@@ -112,7 +137,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,4,6,8,11,13,15,17,19,21,23,25," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,2,4,6,8,11,13,15,17,19,21,23,25,28,30,32,34,36,38,39,41," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

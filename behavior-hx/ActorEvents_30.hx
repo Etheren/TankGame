@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_13 extends ActorScript
+class ActorEvents_30 extends ActorScript
 {
 	
 	
@@ -81,6 +81,46 @@ class ActorEvents_13 extends ActorScript
 	
 	override public function init()
 	{
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((isKeyDown("up") && isKeyDown("left")))
+				{
+					actor.setAngle(Utils.RAD * (315));
+				}
+				else if((isKeyDown("up") && isKeyDown("right")))
+				{
+					actor.setAngle(Utils.RAD * (45));
+				}
+				else if((isKeyDown("down") && isKeyDown("left")))
+				{
+					actor.setAngle(Utils.RAD * (235));
+				}
+				else if((isKeyDown("down") && isKeyDown("right")))
+				{
+					actor.setAngle(Utils.RAD * (135));
+				}
+				else if(isKeyDown("up"))
+				{
+					actor.setAngle(Utils.RAD * (0));
+				}
+				else if(isKeyDown("down"))
+				{
+					actor.setAngle(Utils.RAD * (180));
+				}
+				else if(isKeyDown("left"))
+				{
+					actor.setAngle(Utils.RAD * (270));
+				}
+				else if(isKeyDown("right"))
+				{
+					actor.setAngle(Utils.RAD * (90));
+				}
+			}
+		});
 		
 	}
 	
